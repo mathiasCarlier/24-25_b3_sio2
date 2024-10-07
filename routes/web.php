@@ -21,4 +21,8 @@ Route::get('/hello', function(){
     return 'Bonjour le monde ! ';
 });
 
+Route::get('/schnaps', function(){
+    return view('schnaps');
+});
+
 require __DIR__.'/auth.php';
