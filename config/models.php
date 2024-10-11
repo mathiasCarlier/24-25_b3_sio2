@@ -311,7 +311,7 @@ return [
         |
         */
 
-        'table_prefix' => env('DB_TABLE_PREFIX', 'PFX_'),
+        'table_prefix' => env('DB_TABLE_PREFIX', 'LC_'),
 
         /*
         |--------------------------------------------------------------------------
