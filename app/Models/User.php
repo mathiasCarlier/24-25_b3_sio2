@@ -70,14 +70,8 @@ class User extends Authenticatable
 		'first_name',
 		'last_name',
 		'comment',
-		'code_gender',
 		'id_role'
 	];
-
-	public function gender()
-	{
-		return $this->belongsTo(Gender::class, 'code_gender');
-	}
 
 	public function role()
 	{
