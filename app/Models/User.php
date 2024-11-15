@@ -27,10 +27,8 @@ use Illuminate\Notifications\Notifiable;
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $comment
- * @property string $code_gender
  * @property int $id_role
  * 
- * @property Gender $gender
  * @property Role $role
  *
  * @package App\Models
