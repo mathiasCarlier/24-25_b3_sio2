@@ -25,4 +25,12 @@ Route::get('/schnaps', function(){
     return view('schnaps');
 });
 
+Route::get('/home', function () {
+     return View::make('pages.home');
+});
+    
+Route::get('/about', function () {
+     return View::make('pages.about');
+});
+
 require __DIR__.'/auth.php';
