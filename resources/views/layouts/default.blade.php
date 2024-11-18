@@ -15,10 +15,13 @@
                 <nav class="navigation">
                     @include('includes.menu')
                 </nav>
-            </asie>
+            </aside>
             <main id="main" class="main">
                 @yield('contenu')
             </main>
         </div>
+        <footer class="footer">
+            @include('includes.footer')
+        </footer>
     </body>
 </html>

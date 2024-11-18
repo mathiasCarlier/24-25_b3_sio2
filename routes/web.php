@@ -7,6 +7,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return View::make('pages.home');
+});
+   
+Route::get('/about', function () {
+    return View::make('pages.about');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -25,12 +33,6 @@ Route::get('/schnaps', function(){
     return view('schnaps');
 });
 
-Route::get('/home', function () {
-     return View::make('pages.home');
-});
-    
-Route::get('/about', function () {
-     return View::make('pages.about');
-});
+
 
 require __DIR__.'/auth.php';

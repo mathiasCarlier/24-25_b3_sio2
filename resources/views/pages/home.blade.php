@@ -4,3 +4,7 @@
     <h2>Accueil du site</h2>
     <p>Bienvenue sur la page d'accueil du site</p>
 @stop
+
+@section('contenu-footer')
+    <p>test</p>
+@stop
