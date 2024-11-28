@@ -5,7 +5,15 @@ use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
+});
+
+Route::get('/home', function () {
+    return View::make('pages.home');
+});
+   
+Route::get('/about', function () {
+    return View::make('pages.about');
 });
 
 Route::get('/home', function () {

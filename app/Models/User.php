@@ -27,10 +27,8 @@ use Illuminate\Notifications\Notifiable;
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $comment
- * @property string $code_gender
  * @property int $id_role
  * 
- * @property Gender $gender
  * @property Role $role
  *
  * @package App\Models
@@ -72,14 +70,8 @@ class User extends Authenticatable
 		'first_name',
 		'last_name',
 		'comment',
-		'code_gender',
 		'id_role'
 	];
-
-	public function gender()
-	{
-		return $this->belongsTo(Gender::class, 'code_gender');
-	}
 
 	public function role()
 	{
