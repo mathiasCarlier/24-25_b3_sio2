@@ -21,7 +21,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Role extends Model
 {
-	protected $table = 'PFX_roles';
+	protected $table = 'roles';
 	public $timestamps = false;
 
 	protected $fillable = [
