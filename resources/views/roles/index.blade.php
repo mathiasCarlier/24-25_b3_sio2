@@ -33,6 +33,11 @@
                     </div>
                 </div>
             @endforeach
+
+            <div class="col-sm">
+                <a href="{{ route('roles.create', $role->id) }}"
+                    class="btn btn-primary btn-sm">Create</a>
+            </div>
         </div>
     </div>
 @stop
