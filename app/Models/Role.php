@@ -18,8 +18,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Role extends Model
 {
-	protected $table = 'LC_roles';
-	protected $primaryKey = 'idRole';
+	protected $table = 'roles';
+	protected $primaryKey = 'id';
 	public $timestamps = false;
 
 	protected $fillable = [

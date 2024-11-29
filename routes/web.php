@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -14,6 +15,16 @@ Route::get('/home', function () {
 Route::get('/about', function () {
     return View::make('pages.about');
 });
+
+Route::get('/home', function () {
+    return View::make('pages.home');
+});
+   
+Route::get('/about', function () {
+    return View::make('pages.about');
+});
+
+Route::resource('roles', RoleController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
