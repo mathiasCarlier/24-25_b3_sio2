@@ -1,16 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ListeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/home', function () {
-    return View::make('pages.home');
-});
    
 Route::get('/about', function () {
     return View::make('pages.about');
@@ -19,12 +16,9 @@ Route::get('/about', function () {
 Route::get('/home', function () {
     return View::make('pages.home');
 });
-   
-Route::get('/about', function () {
-    return View::make('pages.about');
-});
 
-Route::resource('roles', RoleController::class);
+Route::resource('users', UserController::class);
+Route::resource('listes', ListeController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -34,14 +28,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-Route::get('/hello', function(){
-    return 'Bonjour le monde ! ';
-});
-
-Route::get('/schnaps', function(){
-    return view('schnaps');
 });
 
 

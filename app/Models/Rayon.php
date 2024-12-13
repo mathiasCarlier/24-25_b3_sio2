@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Rayon extends Model
 {
-	protected $table = 'LC_rayons';
+	protected $table = 'rayons';
 	public $incrementing = false;
 	public $timestamps = false;
 

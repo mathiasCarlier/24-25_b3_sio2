@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Magasin extends Model
 {
-	protected $table = 'LC_magasins';
+	protected $table = 'magasins';
 	protected $primaryKey = 'idMag';
 	public $timestamps = false;
 

@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Liste extends Model
 {
-	protected $table = 'LC_listes';
+	protected $table = 'listes';
 	protected $primaryKey = 'idList';
 	public $timestamps = false;
 

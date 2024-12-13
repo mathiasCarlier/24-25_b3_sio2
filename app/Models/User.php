@@ -38,7 +38,7 @@ class User extends Authenticatable
 {
 	use HasFactory, Notifiable;
 
-	#protected $table = 'PFX_users';
+	#protected $table = 'LC_users';
 
 	protected $casts = [
 		'email_verified_at' => 'datetime',
