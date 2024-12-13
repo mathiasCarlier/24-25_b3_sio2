@@ -14,7 +14,7 @@ class ListeController extends Controller
     {
         $listes = Liste::all();
 
-        return view('listes.index', compact('listes'));
+        return view('listes.index', compact('listes')); 
     }
 
     /**
